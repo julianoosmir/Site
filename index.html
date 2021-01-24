@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router"></script>
+    <title>Juliano Osmir</title>
+</head>
+
+<body>
+    <div id="app">
+        <navbar></navbar>
+        <router-view style="margin-top: -23px;"></router-view>
+    </div>
+
+    <template id="nav">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand fs-2" href="#">Juliano osmir</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <router-link to="/Home">Home</router-link>
+                    </li>
+
+                    <li>
+                        <router-link to="/curriculum">curriculum</router-link>
+                    </li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">stacks<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <router-link to="/linguagens">linguagens</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/frameworks">frameworks</router-link>
+                            </li>
+                            <li> 
+                                <router-link to="/imagens">imagens</router-link>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </template>
+
+    <template id="Home">
+        <div>
+            <div class="container-fluid bg-1 text-center">
+                <img src="60453624.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="Bird"
+                    width="350" height="350">
+            </div>
+            <div class="container-fluid bg-2 text-center">
+                <h3 class="margin">What Am I?</h3>
+                <h4>meu nome é juliano osmir e sou Web developer disposto para qualquer desafio e tenho paixão por
+                    aprender coisas novas </h4>
+                <a href="#" class="btn btn-default btn-lg">
+                    <span class="glyphicon glyphicon-search"></span> Search
+                </a>
+            </div>
+            <div class="container  bg-3 text-center ">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./WhatsApp-icone.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">WhatsApp</h5>
+                            <a href="https://api.whatsapp.com/send?phone=5567997150500&text=ola"
+                                class="btn btn-success">Me mande uma mensagem</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="./link.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">linkedin</h5>
+                            <a href="https://www.linkedin.com/in/juliano-cesar-osmir-hein-49b625196/"
+                                class="btn btn-primary">ou entre em contato por aqui</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <img src="./github.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">github</h5>
+                            <button onclick="window.open('https://github.com/julianoosmir')"
+                                class="btn btn-secondary">tambem veja meus codigos</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="curriculum">
+        <div id="cab" class="text-center">
+            <img src="./Juliano-Osmir.jpg" class="img-fluid mg-thumbnail" width="75%">
+        </div>
+
+    </template>
+
+    <template id="linguagens">
+        <div class="card-group text-center">
+            <div class="card">
+                <img src="html5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./css.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./js.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./java.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Sharp.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="frameworks">
+        <div class="card-group text-center">
+            <div class="card">
+                <img src="./bootstrap.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./vue.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./node.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./spring.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Asp.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="imagens">
+        <img :src="image" />
+        <input type="file" @change="filePag">
+    </template>
+
+    <script>
+        var linguagens = Vue.component('linguagens', {
+            template: '#linguagens'
+        })
+        var frameworks = Vue.component('frameworks', {
+            template: '#frameworks'
+        })
+        var Home = Vue.component('Home', {
+            template: '#Home'
+        })
+        var navbar = Vue.component('navbar', {
+            template: '#nav'
+        })
+        var curriculum = Vue.component('curriculum', {
+            template: '#curriculum'
+        })
+        var imagens = Vue.component('imagens',{
+            template: '#imagens'
+        })
+
+
+        var router = new VueRouter({
+
+            routes: [
+                { path: '/linguagens', component: linguagens },
+                { path: '/frameworks', component: frameworks },
+                { path: '/Home', component: Home },
+                { path: '/curriculum', component: curriculum },
+                { path: '/imagens', component: curriculum }
+            ]
+        })
+
+        var app = new Vue({
+            el: '#app',
+            router,
+            created() {
+                console.log(this.linguagens);
+                this.$router.push({ path: '/Home', component: Home })
+            },
+            data: {
+                message: 'Olá Vue!',
+                image: 'https://via.placeholder.com/150/771796',
+            },
+            methods: {
+                filePag(e) {
+                    
+                    const foto = e.target.files[0]
+                    this.image = URL.createObjectURL(foto)
+                    console.log(this.image)
+                }
+            }
+        })
+    </script>
+
+</body>
+<style>
+    .bg-1 {
+        background-color: #14da9f;
+        /* Green */
+        color: #ffffff;
+        /* background-image: url('./frameworks-750x422.png');*/
+
+    }
+
+    .bg-2 {
+        background-color: #474e5d;
+        /* Dark Blue */
+        color: #ffffff;
+    }
+
+    .bg-3 {
+        background-color: #ffffff;
+        /* White */
+        color: #555555;
+    }
+
+    .bg-4 {
+        background-color: #2f2f2f;
+        /* Black Gray */
+        color: #fff;
+    }
+
+    .bg-5 {
+        background-image: url(/download.jpeg);
+    }
+</style>
+
+</html>
